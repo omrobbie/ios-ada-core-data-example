@@ -38,6 +38,13 @@ class ViewController: UIViewController {
         newUser.setValue(fullname, forKey: "fullname")
         newUser.setValue(email, forKey: "email")
         newUser.setValue(password, forKey: "password")
+        
+        do {
+            try context?.save()
+            print("Data saved")
+        } catch {
+            print("Couldn't save data")
+        }
     }
     
 }
