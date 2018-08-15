@@ -13,6 +13,7 @@
 		FC5AC4882124147F00A5B3B6 /* LoginRegister.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC5AC4862124147F00A5B3B6 /* LoginRegister.xcdatamodeld */; };
 		FC5AC48A2124148000A5B3B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC5AC4892124148000A5B3B6 /* Assets.xcassets */; };
 		FC5AC48D2124148000A5B3B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC5AC48B2124148000A5B3B6 /* LaunchScreen.storyboard */; };
+		FC5AC49521241E4A00A5B3B6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5AC49421241E4A00A5B3B6 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FC5AC4892124148000A5B3B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC5AC48C2124148000A5B3B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC5AC48E2124148000A5B3B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC5AC49421241E4A00A5B3B6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				FC5AC47F2124147F00A5B3B6 /* AppDelegate.swift */,
 				FC5AC4812124147F00A5B3B6 /* ViewController.swift */,
 				FC5AC4832124147F00A5B3B6 /* Main.storyboard */,
+				FC5AC49421241E4A00A5B3B6 /* LoginViewController.swift */,
 				FC5AC4892124148000A5B3B6 /* Assets.xcassets */,
 				FC5AC48B2124148000A5B3B6 /* LaunchScreen.storyboard */,
 				FC5AC48E2124148000A5B3B6 /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC5AC49521241E4A00A5B3B6 /* LoginViewController.swift in Sources */,
 				FC5AC4822124147F00A5B3B6 /* ViewController.swift in Sources */,
 				FC5AC4802124147F00A5B3B6 /* AppDelegate.swift in Sources */,
 				FC5AC4882124147F00A5B3B6 /* LoginRegister.xcdatamodeld in Sources */,

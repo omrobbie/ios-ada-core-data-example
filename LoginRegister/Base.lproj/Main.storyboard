@@ -48,7 +48,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Have an account? Sign In here..."/>
                                 <connections>
-                                    <segue destination="SS1-7K-ti5" kind="show" id="K6D-Br-EFb"/>
+                                    <segue destination="SS1-7K-ti5" kind="show" identifier="SegueLogin" id="K6D-Br-EFb"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S8Z-qW-UhI">
@@ -73,10 +73,10 @@
             </objects>
             <point key="canvasLocation" x="1082.4000000000001" y="133.74384236453201"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="sCJ-oL-pv8">
             <objects>
-                <viewController id="SS1-7K-ti5" sceneMemberID="viewController">
+                <viewController id="SS1-7K-ti5" customClass="LoginViewController" customModule="LoginRegister" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aEa-s3-v9K">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,7 +140,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="K6D-Br-EFb"/>
         <segue reference="bWV-lw-oyg"/>
     </inferredMetricsTieBreakers>
 </document>

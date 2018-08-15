@@ -42,6 +42,9 @@ class ViewController: UIViewController {
         do {
             try context?.save()
             print("Data saved")
+            
+            // pindah ke view login
+            performSegue(withIdentifier: "SegueLogin", sender: nil)
         } catch {
             print("Couldn't save data")
             
