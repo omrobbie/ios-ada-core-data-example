@@ -10,8 +10,13 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    @IBOutlet weak var txtWelcome: UILabel!
+    
+    var fullname = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        txtWelcome.text = "Welcome aboard, \(fullname)"
     }
 
 }

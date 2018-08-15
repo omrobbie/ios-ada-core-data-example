@@ -16,10 +16,17 @@ class LoginViewController: UIViewController {
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var context:NSManagedObjectContext?
+    var fullname = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.context = appDelegate.persistentContainer.viewContext
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? WelcomeViewController {
+            destination.fullname = fullname
+        }
     }
 
     @IBAction func doSignIn(_ sender: Any) {
@@ -36,6 +43,9 @@ class LoginViewController: UIViewController {
                 let correctPassword = data.value(forKey: "password") as! String
                 if password == correctPassword {
                     print("Login success")
+                    
+                    fullname = data.value(forKey: "fullname") as! String
+                    performSegue(withIdentifier: "SegueToWelcomePage", sender: nil)
                 } else {
                     print("Login failed")
                     
