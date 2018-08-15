@@ -28,6 +28,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction func doRegister(_ sender: Any) {
+        let fullname = txtFullname.text
+        let email = txtEmail.text
+        let password = txtPassword.text
+        
+        let entity = NSEntityDescription.entity(forEntityName: "User", in: context!)
+        let newUser = NSManagedObject(entity: entity!, insertInto: context)
+        
+        newUser.setValue(fullname, forKey: "fullname")
+        newUser.setValue(email, forKey: "email")
+        newUser.setValue(password, forKey: "password")
     }
     
 }
