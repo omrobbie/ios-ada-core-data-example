@@ -95,6 +95,9 @@
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="doSignIn:" destination="SS1-7K-ti5" eventType="touchUpInside" id="ZQb-cZ-kFK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBE-0H-OWD">
                                 <rect key="frame" x="48" y="323" width="278" height="30"/>
@@ -115,6 +118,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="80u-ea-1gV"/>
                     </view>
+                    <connections>
+                        <outlet property="txtEmail" destination="BXi-1T-XR9" id="f05-ro-xiB"/>
+                        <outlet property="txtPassword" destination="p0w-QU-PGP" id="8KX-Ew-gv0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Da8-TH-vgw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
