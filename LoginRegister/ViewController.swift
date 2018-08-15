@@ -44,6 +44,11 @@ class ViewController: UIViewController {
             print("Data saved")
         } catch {
             print("Couldn't save data")
+            
+            // tampilkan alert
+            let alert = UIAlertController(title: "Failed!", message: "Failed to register!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+            self.present(alert, animated: true)
         }
     }
     
