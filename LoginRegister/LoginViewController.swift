@@ -38,6 +38,11 @@ class LoginViewController: UIViewController {
                     print("Login success")
                 } else {
                     print("Login failed")
+                    
+                    // tampilkan alert saat password gagal
+                    let alert = UIAlertController(title: "Failed!", message: "Login failed!", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                    self.present(alert, animated: true)
                 }
             }
         } catch {
